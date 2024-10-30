@@ -1,7 +1,5 @@
 # Title: Seasonal variance in brown green energy pathway contributions to food webs across an ecosystem gradient
-
 # Authors: James W. Sturges, Ryan Rezek, W. Ryan James
-
 # Last Updated: 29 October 2024
 
 # Data Setup ----
@@ -119,6 +117,9 @@ SIb<-SI %>% group_by(site,group, common_name, functional_grp) %>%
   summarise(n=n(),md13C = mean(d13C,na.rm = T),d13Csd=sd(d13C,na.rm = T), md15N=mean(d15N,na.rm = T),d15Nsd=sd(d15N,na.rm = T),md34S=mean(d34S,na.rm = T),d34Ssd=sd(d34S,na.rm = T))  %>%
   filter(!is.na(md13C),!is.na(md15N),!is.na(md34S))
 
+SI_cons <-SIa %>% 
+  filter(group == "Consumer")
+write.csv(SI_cons, "tables/Table_S1_consumer_isotopes.csv", row.names = FALSE)
 # Table S2: basal resource isotope values by site and season ---- 
 
 # basal resource average isotope values

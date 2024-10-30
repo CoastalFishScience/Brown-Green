@@ -1,0 +1,81 @@
+"name","type","source","code","mean","sd","lowend","highend","mid","low","up","ymax","ymin"
+"Dry","SRS6","Filamentous Green Algae","Bay Anchovy",0.108,0.089,0.01,0.362,0.084,0.045,0.143,0.29,0.01
+"Dry","SRS6","Mangrove","Bay Anchovy",0.16,0.092,0.038,0.383,0.14,0.093,0.208,0.3805,0.038
+"Dry","SRS6","Phytoplankton","Bay Anchovy",0.704,0.165,0.291,0.907,0.741,0.611,0.834,0.907,0.291
+"Dry","SRS6","Red Macroalgae","Bay Anchovy",0.029,0.04,0,0.143,0.013,0.004,0.037,0.0865,0
+"Dry","SRS6","Filamentous Green Algae","Crested Goby",0.159,0.104,0.016,0.417,0.14,0.087,0.208,0.3895,0.016
+"Dry","SRS6","Mangrove","Crested Goby",0.282,0.118,0.107,0.575,0.262,0.201,0.338,0.5435,0.107
+"Dry","SRS6","Phytoplankton","Crested Goby",0.538,0.145,0.191,0.748,0.566,0.458,0.644,0.748,0.191
+"Dry","SRS6","Red Macroalgae","Crested Goby",0.021,0.024,0,0.086,0.013,0.004,0.029,0.0665,0
+"Dry","SRS6","Filamentous Green Algae","Eastern Grass Shrimp",0.127,0.093,0.014,0.36,0.107,0.06,0.167,0.3275,0.014
+"Dry","SRS6","Mangrove","Eastern Grass Shrimp",0.266,0.124,0.087,0.58,0.24,0.181,0.325,0.541,0.087
+"Dry","SRS6","Phytoplankton","Eastern Grass Shrimp",0.577,0.163,0.183,0.803,0.611,0.481,0.703,0.803,0.183
+"Dry","SRS6","Red Macroalgae","Eastern Grass Shrimp",0.03,0.038,0,0.131,0.016,0.005,0.04,0.0925,0
+"Dry","SRS6","Filamentous Green Algae","Mangrove Tree Crab",0.1,0.073,0.012,0.291,0.084,0.049,0.132,0.2565,0.012
+"Dry","SRS6","Mangrove","Mangrove Tree Crab",0.161,0.083,0.048,0.363,0.145,0.103,0.203,0.353,0.048
+"Dry","SRS6","Phytoplankton","Mangrove Tree Crab",0.717,0.135,0.371,0.884,0.746,0.648,0.817,0.884,0.3945
+"Dry","SRS6","Red Macroalgae","Mangrove Tree Crab",0.021,0.026,0,0.092,0.011,0.003,0.029,0.068,0
+"Dry","SRS6","Filamentous Green Algae","Pink Shrimp",0.135,0.085,0.015,0.34,0.122,0.072,0.181,0.34,0.015
+"Dry","SRS6","Mangrove","Pink Shrimp",0.333,0.137,0.123,0.664,0.313,0.236,0.407,0.6635,0.123
+"Dry","SRS6","Phytoplankton","Pink Shrimp",0.514,0.14,0.169,0.737,0.533,0.437,0.614,0.737,0.1715
+"Dry","SRS6","Red Macroalgae","Pink Shrimp",0.018,0.02,0,0.072,0.012,0.004,0.026,0.059,0
+"Dry","SRS6","Filamentous Green Algae","Porceline Crab",0.128,0.079,0.016,0.313,0.115,0.071,0.17,0.313,0.016
+"Dry","SRS6","Mangrove","Porceline Crab",0.202,0.086,0.064,0.404,0.193,0.145,0.246,0.3975,0.064
+"Dry","SRS6","Phytoplankton","Porceline Crab",0.651,0.119,0.327,0.814,0.674,0.594,0.733,0.814,0.3855
+"Dry","SRS6","Red Macroalgae","Porceline Crab",0.019,0.022,0,0.08,0.011,0.004,0.027,0.0615,0
+"Dry","SRS6","Filamentous Green Algae","Salt Marsh Mud Crab",0.15,0.087,0.018,0.36,0.139,0.088,0.198,0.36,0.018
+"Dry","SRS6","Mangrove","Salt Marsh Mud Crab",0.184,0.084,0.056,0.372,0.174,0.125,0.23,0.372,0.056
+"Dry","SRS6","Phytoplankton","Salt Marsh Mud Crab",0.648,0.118,0.346,0.811,0.672,0.593,0.728,0.811,0.3905
+"Dry","SRS6","Red Macroalgae","Salt Marsh Mud Crab",0.018,0.02,0,0.073,0.011,0.004,0.024,0.054,0
+"Dry","SRS6","Filamentous Green Algae","Tidewater Mojarra",0.182,0.113,0.021,0.468,0.164,0.102,0.242,0.452,0.021
+"Dry","SRS6","Mangrove","Tidewater Mojarra",0.258,0.115,0.089,0.537,0.24,0.18,0.315,0.5175,0.089
+"Dry","SRS6","Phytoplankton","Tidewater Mojarra",0.539,0.147,0.175,0.75,0.568,0.457,0.648,0.75,0.175
+"Dry","SRS6","Red Macroalgae","Tidewater Mojarra",0.02,0.022,0,0.079,0.013,0.004,0.028,0.064,0
+"Wet","SRS6","Filamentous Green Algae","Brown Grass Shrimp",0.113,0.094,0.005,0.343,0.089,0.039,0.161,0.343,0.005
+"Wet","SRS6","Mangrove","Brown Grass Shrimp",0.64,0.16,0.328,0.933,0.645,0.531,0.756,0.933,0.328
+"Wet","SRS6","Phytoplankton","Brown Grass Shrimp",0.24,0.14,0.023,0.536,0.227,0.127,0.341,0.536,0.023
+"Wet","SRS6","Red Macroalgae","Brown Grass Shrimp",0.007,0.009,0,0.032,0.004,0.001,0.008,0.0185,0
+"Wet","SRS6","Filamentous Green Algae","Clown Goby",0.139,0.123,0.005,0.461,0.107,0.042,0.201,0.4395,0.005
+"Wet","SRS6","Mangrove","Clown Goby",0.641,0.166,0.31,0.942,0.642,0.526,0.765,0.942,0.31
+"Wet","SRS6","Phytoplankton","Clown Goby",0.214,0.128,0.019,0.491,0.2,0.111,0.302,0.491,0.019
+"Wet","SRS6","Red Macroalgae","Clown Goby",0.006,0.007,0,0.027,0.004,0.001,0.008,0.0185,0
+"Wet","SRS6","Filamentous Green Algae","Crested Goby",0.113,0.101,0.004,0.381,0.086,0.039,0.159,0.339,0.004
+"Wet","SRS6","Mangrove","Crested Goby",0.71,0.142,0.398,0.937,0.725,0.618,0.816,0.937,0.398
+"Wet","SRS6","Phytoplankton","Crested Goby",0.171,0.105,0.022,0.417,0.153,0.087,0.239,0.417,0.022
+"Wet","SRS6","Red Macroalgae","Crested Goby",0.005,0.006,0,0.02,0.003,0.001,0.007,0.016,0
+"Wet","SRS6","Filamentous Green Algae","Eastern Grass Shrimp",0.096,0.089,0.004,0.323,0.069,0.03,0.137,0.2975,0.004
+"Wet","SRS6","Mangrove","Eastern Grass Shrimp",0.696,0.155,0.382,0.95,0.705,0.586,0.818,0.95,0.382
+"Wet","SRS6","Phytoplankton","Eastern Grass Shrimp",0.201,0.125,0.017,0.465,0.186,0.098,0.287,0.465,0.017
+"Wet","SRS6","Red Macroalgae","Eastern Grass Shrimp",0.007,0.009,0,0.032,0.004,0.002,0.009,0.0195,0
+"Wet","SRS6","Filamentous Green Algae","Eastern Mosquitofish",0.116,0.103,0.005,0.38,0.09,0.038,0.165,0.3555,0.005
+"Wet","SRS6","Mangrove","Eastern Mosquitofish",0.665,0.154,0.358,0.941,0.669,0.56,0.777,0.941,0.358
+"Wet","SRS6","Phytoplankton","Eastern Mosquitofish",0.213,0.123,0.02,0.466,0.2,0.115,0.303,0.466,0.02
+"Wet","SRS6","Red Macroalgae","Eastern Mosquitofish",0.006,0.007,0,0.028,0.004,0.001,0.008,0.0185,0
+"Wet","SRS6","Filamentous Green Algae","Golden Topminnow",0.113,0.1,0.005,0.38,0.087,0.036,0.16,0.346,0.005
+"Wet","SRS6","Mangrove","Golden Topminnow",0.678,0.153,0.372,0.948,0.681,0.572,0.791,0.948,0.372
+"Wet","SRS6","Phytoplankton","Golden Topminnow",0.204,0.122,0.019,0.462,0.19,0.104,0.291,0.462,0.019
+"Wet","SRS6","Red Macroalgae","Golden Topminnow",0.006,0.008,0,0.025,0.004,0.001,0.008,0.0185,0
+"Wet","SRS6","Filamentous Green Algae","Pink Shrimp",0.088,0.079,0.004,0.292,0.067,0.028,0.126,0.273,0.004
+"Wet","SRS6","Mangrove","Pink Shrimp",0.749,0.142,0.445,0.965,0.767,0.655,0.861,0.965,0.445
+"Wet","SRS6","Phytoplankton","Pink Shrimp",0.158,0.11,0.012,0.416,0.137,0.072,0.224,0.416,0.012
+"Wet","SRS6","Red Macroalgae","Pink Shrimp",0.004,0.005,0,0.02,0.003,0.001,0.006,0.0135,0
+"Wet","SRS6","Filamentous Green Algae","Sailfin Molly",0.088,0.082,0.004,0.295,0.064,0.029,0.124,0.2665,0.004
+"Wet","SRS6","Mangrove","Sailfin Molly",0.736,0.146,0.431,0.966,0.749,0.637,0.853,0.966,0.431
+"Wet","SRS6","Phytoplankton","Sailfin Molly",0.171,0.115,0.012,0.43,0.15,0.079,0.244,0.43,0.012
+"Wet","SRS6","Red Macroalgae","Sailfin Molly",0.005,0.006,0,0.02,0.003,0.001,0.006,0.0135,0
+"Wet","SRS6","Filamentous Green Algae","Salt Marsh Mud Crab",0.134,0.104,0.007,0.393,0.113,0.052,0.19,0.393,0.007
+"Wet","SRS6","Mangrove","Salt Marsh Mud Crab",0.602,0.152,0.301,0.879,0.604,0.5,0.711,0.879,0.301
+"Wet","SRS6","Phytoplankton","Salt Marsh Mud Crab",0.259,0.127,0.045,0.515,0.25,0.161,0.347,0.515,0.045
+"Wet","SRS6","Red Macroalgae","Salt Marsh Mud Crab",0.005,0.006,0,0.021,0.004,0.001,0.008,0.0185,0
+"Wet","SRS6","Filamentous Green Algae","Silver Jenny",0.103,0.102,0.004,0.381,0.072,0.031,0.14,0.3035,0.004
+"Wet","SRS6","Mangrove","Silver Jenny",0.731,0.148,0.411,0.963,0.746,0.635,0.844,0.963,0.411
+"Wet","SRS6","Phytoplankton","Silver Jenny",0.161,0.107,0.012,0.399,0.141,0.075,0.231,0.399,0.012
+"Wet","SRS6","Red Macroalgae","Silver Jenny",0.005,0.006,0,0.021,0.003,0.001,0.007,0.016,0
+"Wet","SRS6","Filamentous Green Algae","Striped Mullet",0.098,0.095,0.004,0.357,0.069,0.03,0.137,0.2975,0.004
+"Wet","SRS6","Mangrove","Striped Mullet",0.713,0.155,0.383,0.957,0.726,0.604,0.837,0.957,0.383
+"Wet","SRS6","Phytoplankton","Striped Mullet",0.183,0.12,0.015,0.454,0.163,0.086,0.264,0.454,0.015
+"Wet","SRS6","Red Macroalgae","Striped Mullet",0.006,0.008,0,0.027,0.003,0.001,0.008,0.0185,0
+"Wet","SRS6","Filamentous Green Algae","Tidewater Mojarra",0.133,0.11,0.006,0.415,0.108,0.049,0.188,0.3965,0.006
+"Wet","SRS6","Mangrove","Tidewater Mojarra",0.679,0.148,0.365,0.936,0.685,0.581,0.791,0.936,0.365
+"Wet","SRS6","Phytoplankton","Tidewater Mojarra",0.183,0.11,0.018,0.425,0.166,0.096,0.256,0.425,0.018
+"Wet","SRS6","Red Macroalgae","Tidewater Mojarra",0.005,0.006,0,0.022,0.003,0.001,0.007,0.016,0

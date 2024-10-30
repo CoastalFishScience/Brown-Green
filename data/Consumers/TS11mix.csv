@@ -1,0 +1,18 @@
+"site","hydroseason","group","common_name","functional_grp","n","d13C","d13Csd","d15N","d15Nsd","d34S","d34Ssd"
+"TS11","Dry","Consumer","Fringed Filefish","demersal_fish",1,-17.71,NA,6.27,NA,11.4,NA
+"TS11","Dry","Consumer","Golden Topminnow","Forage_fish",1,-15.17,NA,4.26,NA,12.1,NA
+"TS11","Dry","Consumer","Harris Mud Crab","Crab",7,-15.5185714285714,1.3297045858815,4.55857142857143,0.827112015215766,14.47,0.814821043747235
+"TS11","Wet","Consumer","Arrow Shrimp","Shrimp",2,-16.195,0.34648232278141,4.19,0.0141421356237313,12.95,0.466690475583121
+"TS11","Wet","Consumer","Blue Striped Grunt","demersal_fish",3,-14.47,0.550272659687904,8.72,0.355387112878337,10.05,1.10801624536827
+"TS11","Wet","Consumer","Brown Grass Shrimp","Shrimp",3,-14.5333333333333,0.0776745346515396,6.03666666666667,0.100664459136943,12.55,0.587962583843563
+"TS11","Wet","Consumer","Bubble Snail","Gastropod",1,-18.8,NA,4.37,NA,14.21,NA
+"TS11","Wet","Consumer","Chestnut Turban Snail","Gastropod",1,-13.67,NA,3.27,NA,13.95,NA
+"TS11","Wet","Consumer","Fringed Filefish","demersal_fish",3,-13.92,0.372424488990721,6.83333333333333,0.0152752523165191,9.92,0.995941765365827
+"TS11","Wet","Consumer","Giant Purple Barnacle","Sessile_filter_feeder",2,-16.6,0.5939696961967,8.37,0.169705627484772,14.14,2.50315800540038
+"TS11","Wet","Consumer","Harris Mud Crab","Crab",2,-19.365,0.106066017177984,3.56,0.113137084989848,13.8,0.5939696961967
+"TS11","Wet","Consumer","Hermit Crab","Crab",1,-16.82,NA,3.08,NA,10.15,NA
+"TS11","Wet","Consumer","Ivory Cerith","Gastropod",2,-13.7,0.183847763108502,3.06,0.014142135623731,12.155,3.86787409309042
+"TS11","Wet","Consumer","Penaeid Shrimp","Shrimp",2,-14.55,0.523259018078045,6.78,0.15556349186104,12.575,0.275771644662753
+"TS11","Wet","Consumer","Schoolmaster Snapper","Predator",2,-13.985,0.0636396103067892,8.7,0.353553390593274,11.51,0.424264068711928
+"TS11","Wet","Consumer","Silver Jenny","demersal_fish",3,-12.6,0.607536007163361,7.80666666666667,0.44792112400883,7.18666666666667,2.48785717703676
+"TS11","Wet","Consumer","Stone Crab","Crab",2,-17.85,0.395979797464466,6.895,0.403050865276332,14.775,1.12429978208661

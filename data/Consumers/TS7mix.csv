@@ -1,0 +1,18 @@
+"site","hydroseason","group","common_name","functional_grp","n","d13C","d13Csd","d15N","d15Nsd","d34S","d34Ssd"
+"TS7","Dry","Consumer","Eastern Oyster","Sessile_filter_feeder",1,-22.59,NA,8.16,NA,10.12,NA
+"TS7","Dry","Consumer","Gulf Pipefish","demersal_fish",1,-15.91,NA,11.1,NA,9.04,NA
+"TS7","Dry","Consumer","Mussel","Sessile_filter_feeder",1,-24.76,NA,7.3,NA,9.45,NA
+"TS7","Dry","Consumer","Pink Shrimp","Shrimp",1,-15.12,NA,11.06,NA,12.3,NA
+"TS7","Dry","Consumer","Rainwater Killifish","Forage_fish",2,-17.95,0.268700576850887,10.12,0.636396103067893,11.945,0.247487373415291
+"TS7","Dry","Consumer","Stone Crab","Crab",1,-14.19,NA,7.2,NA,9.16,NA
+"TS7","Wet","Consumer","Bay Anchovy","Forage_fish",3,-17.9966666666667,0.153079500042733,10.0766666666667,0.658356539675374,3.36333333333333,0.85231058501777
+"TS7","Wet","Consumer","Brown Grass Shrimp","Shrimp",2,-18.58,0.692964645562817,10.035,0.912167747730646,6.89,1.51320851173921
+"TS7","Wet","Consumer","Code Goby","demersal_fish",2,-18.62,0.183847763108503,10.625,0.00707106781186658,3.425,0.558614357137373
+"TS7","Wet","Consumer","Crested Goby","demersal_fish",3,-19.1666666666667,1.04920604903581,10.1266666666667,0.7245228314783,2.04666666666667,3.14258386257763
+"TS7","Wet","Consumer","Eastern Oyster","Sessile_filter_feeder",1,-26.22,NA,7.36,NA,8.81,NA
+"TS7","Wet","Consumer","Flatback Mud Crab","Crab",2,-24.705,0.756604255869604,7.69,0.806101730552664,5.48,0.0282842712474619
+"TS7","Wet","Consumer","Goldspotted Killifish","Forage_fish",2,-17.455,0.417193000900063,10.69,0.197989898732233,2.495,0.700035713374682
+"TS7","Wet","Consumer","Harris Mud Crab","Crab",2,-23.725,0.572756492761103,7.99,0.268700576850888,4.425,0.417193000900063
+"TS7","Wet","Consumer","Pilchard","Forage_fish",2,-18.795,0.190918830920368,8.895,0.106066017177982,5.75,0.212132034355965
+"TS7","Wet","Consumer","Pink Shrimp","Shrimp",1,-17.98,NA,8.79,NA,3.14,NA
+"TS7","Wet","Consumer","Rainwater Killifish","Forage_fish",3,-18.8533333333333,0.987741531643442,11.89,0.343947670438397,7.26,0.897050723203543

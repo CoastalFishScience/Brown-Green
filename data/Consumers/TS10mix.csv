@@ -1,0 +1,24 @@
+"site","hydroseason","group","common_name","functional_grp","n","d13C","d13Csd","d15N","d15Nsd","d34S","d34Ssd"
+"TS10","Dry","Consumer","Blue Crab","Crab",1,-12.87,NA,5.84,NA,8.49,NA
+"TS10","Dry","Consumer","Bluegill","demersal_fish",1,-11.7,NA,5.66,NA,9.12,NA
+"TS10","Dry","Consumer","Dwarf Seahorse","demersal_fish",2,-11.51,3.3375440072005,7.515,1.576848122046,8.655,1.66170093578839
+"TS10","Dry","Consumer","Hermit crab","Crab",4,-15.3125,0.729126189352707,6.99,2.24232022690783,11.6375,1.86810733096362
+"TS10","Dry","Consumer","Snapping Shrimp","Shrimp",2,-14.995,1.03944696834423,11.215,0.261629509039023,10.93,0.0282842712474613
+"TS10","Dry","Consumer","Spider Crab","Crab",2,-13.595,2.19910208949016,4.305,1.46371103705615,8.84,2.54558441227157
+"TS10","Dry","Consumer","Spiny Lobster","Benthic_invert",1,-13.86,NA,5.46,NA,12.46,NA
+"TS10","Dry","Consumer","Stone Crab","Crab",1,-10.57,NA,4.2,NA,11.77,NA
+"TS10","Dry","Consumer","Tidewater Mojarra","Forage_fish",1,-13.57,NA,7.54,NA,7.53,NA
+"TS10","Wet","Consumer","Atlantic Modulus","Gastropod",1,-10.02,NA,5.07,NA,7.9,NA
+"TS10","Wet","Consumer","Barracuda","Predator",1,-12.37,NA,10.53,NA,-0.94,NA
+"TS10","Wet","Consumer","Blue Crab","Crab",3,-11.7,0.229128784747792,5.18666666666667,0.957096303061157,6.4,4.63181389954303
+"TS10","Wet","Consumer","Brown Grass Shrimp","Shrimp",2,-11.445,0.81317279836453,5.765,0.233345237791561,10.815,0.502045814642448
+"TS10","Wet","Consumer","Cross-Barred Venus","Sessile_filter_feeder",2,-12.87,0,5.565,0.275771644662753,5.555,0.629325035256027
+"TS10","Wet","Consumer","Goldspotted Killifish","Forage_fish",3,-10.9333333333333,0.283607710285411,7.16333333333333,0.347035060668707,4.63333333333333,0.279344470740577
+"TS10","Wet","Consumer","Hermit Crab","Crab",3,-13.4766666666667,0.891758562242793,4.38666666666667,0.78373039582074,9.95333333333333,0.669427616201583
+"TS10","Wet","Consumer","Pinfish","demersal_fish",1,-9.87,NA,8.09,NA,4.9,NA
+"TS10","Wet","Consumer","Redfin Needlefish","Predator",2,-10.065,1.44956890143242,11.12,0.254558441227158,3.675,1.53442171517481
+"TS10","Wet","Consumer","Scaly Pearl Oyster","Sessile_filter_feeder",2,-12.68,0.282842712474619,4.71,0.0424264068711932,6.89,0.169705627484772
+"TS10","Wet","Consumer","Silver Jenny","demersal_fish",3,-10.8966666666667,0.751953012716441,9.34,0.0655743852430204,1.92333333333333,0.453908948285153
+"TS10","Wet","Consumer","Tidewater Mojarra","Forage_fish",3,-10.5666666666667,0.0808290376865476,8.14333333333333,0.119303534454488,4.42333333333333,0.375544049790878
+"TS10","Wet","Consumer","Tidewater Silverside","Forage_fish",2,-10.02,0,9.71,0.169705627484772,2.53,0.183847763108503
+"TS10","Wet","Consumer","West Indian False Cerith","Gastropod",2,-12.215,0.360624458405139,5.275,0.0636396103067892,0.46,1.40007142674936

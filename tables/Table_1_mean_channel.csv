@@ -1,0 +1,37 @@
+"site","Season","path","transect","mean_contribution"
+"SRS Marsh","Dry","brown","Shark River Slough",0.288076443442375
+"SRS Marsh","Dry","green","Shark River Slough",0.711923556557625
+"SRS Marsh","Wet","brown","Shark River Slough",0.208248673726175
+"SRS Marsh","Wet","green","Shark River Slough",0.791751326273825
+"Upper River","Dry","brown","Shark River Slough",0.425249027271803
+"Upper River","Dry","green","Shark River Slough",0.574750972728197
+"Upper River","Wet","brown","Shark River Slough",0.426409825065844
+"Upper River","Wet","green","Shark River Slough",0.573590174934156
+"Mid River","Dry","brown","Shark River Slough",0.553209250750107
+"Mid River","Dry","green","Shark River Slough",0.446790749249893
+"Mid River","Wet","brown","Shark River Slough",0.554434721997499
+"Mid River","Wet","green","Shark River Slough",0.445565278002501
+"Lower River","Dry","brown","Shark River Slough",0.265929654094808
+"Lower River","Dry","green","Shark River Slough",0.734070345905192
+"Lower River","Wet","brown","Shark River Slough",0.695771660163577
+"Lower River","Wet","green","Shark River Slough",0.304228339836423
+"TS Marsh","Dry","brown","Taylor Slough",0.553312449123448
+"TS Marsh","Dry","green","Taylor Slough",0.446687550876552
+"TS Marsh","Wet","brown","Taylor Slough",0.559221650586002
+"TS Marsh","Wet","green","Taylor Slough",0.440778349413998
+"Mangrove Ecotone","Dry","brown","Taylor Slough",0.400424209631754
+"Mangrove Ecotone","Dry","green","Taylor Slough",0.599575790368246
+"Mangrove Ecotone","Wet","brown","Taylor Slough",0.416000702112597
+"Mangrove Ecotone","Wet","green","Taylor Slough",0.583999297887403
+"Inner Bay","Dry","brown","Taylor Slough",0.413624053467902
+"Inner Bay","Dry","green","Taylor Slough",0.586375946532098
+"Inner Bay","Wet","brown","Taylor Slough",0.35203665145086
+"Inner Bay","Wet","green","Taylor Slough",0.64796334854914
+"Mid Bay","Dry","brown","Taylor Slough",0.311316863178508
+"Mid Bay","Dry","green","Taylor Slough",0.688683136821492
+"Mid Bay","Wet","brown","Taylor Slough",0.526748111317247
+"Mid Bay","Wet","green","Taylor Slough",0.473251888682753
+"Outer Bay","Dry","brown","Taylor Slough",0.0995671157530271
+"Outer Bay","Dry","green","Taylor Slough",0.900432884246973
+"Outer Bay","Wet","brown","Taylor Slough",0.0804032527886388
+"Outer Bay","Wet","green","Taylor Slough",0.919596747211361

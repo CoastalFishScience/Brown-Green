@@ -1,0 +1,10 @@
+"site","hydroseason","group","common_name","functional_grp","n","d13C","d13Csd","d15N","d15Nsd","d34S","d34Ssd"
+"TS9","Dry","Consumer","Eastern Grass Shrimp","Shrimp",1,-18.55,NA,11.61,NA,15.04,NA
+"TS9","Dry","Consumer","Rainwater Killifish","Forage_fish",1,-16.38,NA,13.73,NA,12.68,NA
+"TS9","Dry","Consumer","Redfin Needlefish","Predator",1,-15.85,NA,12.29,NA,10.87,NA
+"TS9","Dry","Consumer","Toadfish","demersal_fish",1,-15.17,NA,12.66,NA,9.54,NA
+"TS9","Wet","Consumer","Atlantic Marginella","Gastropod",2,-15.515,0.275771644662754,12.54,0.268700576850889,14.215,0.388908729652602
+"TS9","Wet","Consumer","Bubble Snail","Gastropod",2,-20.48,0.325269119345812,12.465,0.67175144212722,18.01,0.622253967444161
+"TS9","Wet","Consumer","Hermit Crab","Crab",1,-16.2,NA,9.82,NA,13.67,NA
+"TS9","Wet","Consumer","Rainwater Killifish","Forage_fish",2,-15.76,0.15556349186104,12.81,0.212132034355965,8.95,0.777817459305202
+"TS9","Wet","Consumer","Snapping Shrimp","Shrimp",3,-16.9566666666667,1.51928711352836,11.48,0.37589892258425,1.3,0.63

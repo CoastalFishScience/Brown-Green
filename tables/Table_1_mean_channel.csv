@@ -1,37 +1,37 @@
-"site","Season","path","transect","mean_contribution"
-"SRS Marsh","Dry","brown","Shark River Slough",0.288076443442375
-"SRS Marsh","Dry","green","Shark River Slough",0.711923556557625
-"SRS Marsh","Wet","brown","Shark River Slough",0.208248673726175
-"SRS Marsh","Wet","green","Shark River Slough",0.791751326273825
-"Upper River","Dry","brown","Shark River Slough",0.425249027271803
-"Upper River","Dry","green","Shark River Slough",0.574750972728197
-"Upper River","Wet","brown","Shark River Slough",0.426409825065844
-"Upper River","Wet","green","Shark River Slough",0.573590174934156
-"Mid River","Dry","brown","Shark River Slough",0.553209250750107
-"Mid River","Dry","green","Shark River Slough",0.446790749249893
-"Mid River","Wet","brown","Shark River Slough",0.554434721997499
-"Mid River","Wet","green","Shark River Slough",0.445565278002501
-"Lower River","Dry","brown","Shark River Slough",0.265929654094808
-"Lower River","Dry","green","Shark River Slough",0.734070345905192
-"Lower River","Wet","brown","Shark River Slough",0.695771660163577
-"Lower River","Wet","green","Shark River Slough",0.304228339836423
-"TS Marsh","Dry","brown","Taylor Slough",0.553312449123448
-"TS Marsh","Dry","green","Taylor Slough",0.446687550876552
-"TS Marsh","Wet","brown","Taylor Slough",0.559221650586002
-"TS Marsh","Wet","green","Taylor Slough",0.440778349413998
-"Mangrove Ecotone","Dry","brown","Taylor Slough",0.400424209631754
-"Mangrove Ecotone","Dry","green","Taylor Slough",0.599575790368246
-"Mangrove Ecotone","Wet","brown","Taylor Slough",0.416000702112597
-"Mangrove Ecotone","Wet","green","Taylor Slough",0.583999297887403
-"Inner Bay","Dry","brown","Taylor Slough",0.413624053467902
-"Inner Bay","Dry","green","Taylor Slough",0.586375946532098
-"Inner Bay","Wet","brown","Taylor Slough",0.35203665145086
-"Inner Bay","Wet","green","Taylor Slough",0.64796334854914
-"Mid Bay","Dry","brown","Taylor Slough",0.311316863178508
-"Mid Bay","Dry","green","Taylor Slough",0.688683136821492
-"Mid Bay","Wet","brown","Taylor Slough",0.526748111317247
-"Mid Bay","Wet","green","Taylor Slough",0.473251888682753
-"Outer Bay","Dry","brown","Taylor Slough",0.0995671157530271
-"Outer Bay","Dry","green","Taylor Slough",0.900432884246973
-"Outer Bay","Wet","brown","Taylor Slough",0.0804032527886388
-"Outer Bay","Wet","green","Taylor Slough",0.919596747211361
+site,season,path,mean_contribution,sd_contribution,n,lower_ci,upper_ci
+SRS Marsh,Dry,brown,0.28807644,0.15698176,3000,0.28245676,0.29369613
+SRS Marsh,Dry,green,0.71192356,0.15698176,3000,0.70630387,0.71754324
+SRS Marsh,Wet,brown,0.20824867,0.13131184,3000,0.20354793,0.21294942
+SRS Marsh,Wet,green,0.79175133,0.13131184,3000,0.78705058,0.79645207
+Upper River,Dry,brown,0.42524903,0.12858207,3000,0.420646,0.42985205
+Upper River,Dry,green,0.57475097,0.12858207,3000,0.57014795,0.579354
+Upper River,Wet,brown,0.42640983,0.13530796,3000,0.42156603,0.43125362
+Upper River,Wet,green,0.57359017,0.13530796,3000,0.56874638,0.57843397
+Mid River,Dry,brown,0.55320925,0.11077679,3000,0.54924363,0.55717488
+Mid River,Dry,green,0.44679075,0.11077679,3000,0.44282512,0.45075637
+Mid River,Wet,brown,0.55443472,0.08650578,3000,0.55133796,0.55753148
+Mid River,Wet,green,0.44556528,0.08650578,3000,0.44246852,0.44866204
+Lower River,Dry,brown,0.26592965,0.08990864,3000,0.26271107,0.26914823
+Lower River,Dry,green,0.73407035,0.08990864,3000,0.73085177,0.73728893
+Lower River,Wet,brown,0.69577166,0.12609473,3000,0.69125768,0.70028564
+Lower River,Wet,green,0.30422834,0.12609473,3000,0.29971436,0.30874232
+TS Marsh,Dry,brown,0.55331245,0.21706977,3000,0.54554171,0.56108318
+TS Marsh,Dry,green,0.44668755,0.21706977,3000,0.43891682,0.45445829
+TS Marsh,Wet,brown,0.55922165,0.33703143,3000,0.54715649,0.57128681
+TS Marsh,Wet,green,0.44077835,0.33703143,3000,0.42871319,0.45284351
+Mangrove Ecotone,Dry,brown,0.40042421,0.14143998,3000,0.39536089,0.40548752
+Mangrove Ecotone,Dry,green,0.59957579,0.14143998,3000,0.59451248,0.60463911
+Mangrove Ecotone,Wet,brown,0.4160007,0.16330048,3000,0.41015482,0.42184659
+Mangrove Ecotone,Wet,green,0.5839993,0.16330048,3000,0.57815341,0.58984518
+Inner Bay,Dry,brown,0.41362405,0.19391273,3000,0.4066823,0.42056581
+Inner Bay,Dry,green,0.58637595,0.19391273,3000,0.57943419,0.5933177
+Inner Bay,Wet,brown,0.35203665,0.23569978,3000,0.34359899,0.36047431
+Inner Bay,Wet,green,0.64796335,0.23569978,3000,0.63952569,0.65640101
+Mid Bay,Dry,brown,0.31131686,0.13329243,3000,0.30654522,0.31608851
+Mid Bay,Dry,green,0.68868314,0.13329243,3000,0.68391149,0.69345478
+Mid Bay,Wet,brown,0.52674811,0.15246451,3000,0.52129014,0.53220609
+Mid Bay,Wet,green,0.47325189,0.15246451,3000,0.46779391,0.47870986
+Outer Bay,Dry,brown,0.09956712,0.07045299,3000,0.09704502,0.10208922
+Outer Bay,Dry,green,0.90043288,0.07045299,3000,0.89791078,0.90295498
+Outer Bay,Wet,brown,0.08040325,0.06593219,3000,0.07804299,0.08276352
+Outer Bay,Wet,green,0.91959675,0.06593219,3000,0.91723648,0.92195701

@@ -372,17 +372,35 @@ sources <- sources %>%
     Meand34S = Meand34S + 0.75
   )
 
+consumers <- consumers %>%
+  mutate(common_name = case_when(
+    common_name == "Benthic_invert" ~ "Benthic Inverts",
+    common_name == "Crab" ~ "Crabs",
+    common_name == "demersal_fish" ~ "Demersal Fish",
+    common_name == "Forage_fish" ~ "Forage Fish",
+    common_name == "Gastrop" ~ "Gastropods",
+    common_name == "Insect" ~ "Insects",
+    common_name == "Predator" ~ "Predators",
+    common_name == "Sessile_filter_feeder" ~ "Filter Feeders",
+    common_name == "Shrimp" ~ "Shrimp",
+    TRUE ~ common_name  # Keep others as is
+  ))
+
+
 # CN Biplots fixed scales
 cn_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand15N)) +
   geom_point(size = 3) + 
-  geom_errorbar(aes(ymin = Meand15N - SDd15N, ymax = Meand15N + SDd15N), width = 0,linetype = "dashed") + 
-  geom_errorbarh(aes(xmin = Meand13C - SDd13C, xmax =  Meand13C + SDd13C), height = 0,linetype = "dashed") +
-  geom_point(data = consumers, aes(x = md13C, y = md15N, color = hydroseason, shape = hydroseason), size = 3) +
+  geom_errorbar(aes(ymin = Meand15N - SDd15N, ymax = Meand15N + SDd15N), width = 0, linetype = "dashed") + 
+  geom_errorbarh(aes(xmin = Meand13C - SDd13C, xmax =  Meand13C + SDd13C), height = 0, linetype = "dashed") +
+  
+  geom_point(data = consumers, aes(x = md13C, y = md15N, color = hydroseason, shape = functional_grp), size = 3) +
   scale_color_manual(values = cols, drop = FALSE) +
-  scale_shape_manual(values = c(17, 15)) +
+  scale_shape_manual(values = c(15,16,17,18,19,3,8,13,4), 
+                     labels = c("Demersal Fish", "Forage Fish", "Predators", "Crabs", "Benthic Inverts","Gastropods", "Insects", "Filter Feeders", "Shrimp")) +
+  
   ylab(expression(paste(delta^{15}, "N (\u2030)"))) +
   xlab(expression(paste(delta^{13}, "C (\u2030)"))) +
-  labs(color = "Hydroseason", shape = "Hydroseason") +
+  labs(color = "Hydroseason", shape = "Functional Group") +
   facet_wrap(~zone, labeller = labeller(zone = site_names)) +
   theme_classic() + 
   theme(
@@ -398,25 +416,26 @@ cn_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand15N)) +
     axis.text.x = element_text(size = 24, face = "bold", colour = "black"),
     axis.text.y = element_text(size = 24, face = "bold", colour = "black")
   ) +
-  geom_text(data = sources, aes(label = plot_source),fontface = "bold", size = 6, hjust = -0.04, vjust = -.5) + 
+  geom_text(data = sources, aes(label = plot_source), fontface = "bold", size = 6, hjust = -0.04, vjust = -.5) + 
   guides(
-    color = guide_legend(ncol = 1, override.aes = list(size = 8)), # Adjust color icon size
-    shape = guide_legend(ncol = 1, override.aes = list(size = 8))  # Adjust shape icon size
+    color = guide_legend(ncol = 1, override.aes = list(size = 8)), 
+    shape = guide_legend(ncol = 1, override.aes = list(fill = "black", color = "black", size = 8))
   )
-
-
 
 #CS biplots fixed scales
-cs_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand34S)) +
+cs_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand15N)) +
   geom_point(size = 3) + 
-  geom_errorbar(aes(ymin = Meand34S - SDd34S, ymax = Meand34S + SDd34S), width = 0,linetype = "dashed") + 
+  geom_errorbar(aes(ymin = Meand15N - SDd15N, ymax = Meand15N + SDd15N), width = 0, linetype = "dashed") + 
   geom_errorbarh(aes(xmin = Meand13C - SDd13C, xmax =  Meand13C + SDd13C), height = 0, linetype = "dashed") +
-  geom_point(data = consumers, aes(x = md13C, y = md34S, color = hydroseason, shape = hydroseason), size = 4) +
+  
+  geom_point(data = consumers, aes(x = md13C, y = md15N, color = hydroseason, shape = functional_grp), size = 3) +
   scale_color_manual(values = cols, drop = FALSE) +
-  scale_shape_manual(values = c(17, 15)) +
-  ylab(expression(paste(delta^{34}, "S (\u2030)"))) +
+  scale_shape_manual(values = c(15,16,17,18,19,3,8,13,4), 
+                     labels = c("Demersal Fish", "Forage Fish", "Predators", "Crabs", "Benthic Inverts","Gastropods", "Insects", "Filter Feeders", "Shrimp")) +
+  
+  ylab(expression(paste(delta^{15}, "N (\u2030)"))) +
   xlab(expression(paste(delta^{13}, "C (\u2030)"))) +
-  labs(color = "Hydroseason", shape = "Hydroseason") +
+  labs(color = "Hydroseason", shape = "Functional Group") +
   facet_wrap(~zone, labeller = labeller(zone = site_names)) +
   theme_classic() + 
   theme(
@@ -432,12 +451,11 @@ cs_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand34S)) +
     axis.text.x = element_text(size = 24, face = "bold", colour = "black"),
     axis.text.y = element_text(size = 24, face = "bold", colour = "black")
   ) +
-  geom_text(data = sources, aes(label = plot_source),fontface = "bold", size = 6, hjust = -0.04, vjust = -.5) + 
+  geom_text(data = sources, aes(label = plot_source), fontface = "bold", size = 6, hjust = -0.04, vjust = -.5) + 
   guides(
-    color = guide_legend(ncol = 1, override.aes = list(size = 8)), # Adjust color icon size
-    shape = guide_legend(ncol = 1, override.aes = list(size = 8))  # Adjust shape icon size
+    color = guide_legend(ncol = 1, override.aes = list(size = 8)), 
+    shape = guide_legend(ncol = 1, override.aes = list(fill = "black", color = "black", size = 8))
   )
-
 
 
 cn_plot_standard_axes
@@ -445,8 +463,6 @@ ggsave("figures/Figure_S1.png", cn_plot_standard_axes, units = "in", width = 18,
 
 cs_plot_standard_axes
 ggsave("figures/Figure_S2.png", cs_plot_standard_axes, units = "in", width = 18, height = 15)
-
-# End of analysis
 # Mixing Model: SRS Marsh (SRS3)  ----
 SRS3mix <- SIa %>% filter(site == 'SRS3', common_name != "Egyptian paspalidium", group == 'Consumer') %>% rename('d13C' = 'md13C', 'd15N' = 'md15N', 'd34S' = 'md34S')
 
@@ -1187,6 +1203,43 @@ green_contributions <- summed_contributions %>%
 green_contributions <- green_contributions %>%
   mutate(site = factor(site, levels = c( "Lower River","Mid River", "Upper River","SRS Marsh","Outer Bay", "Mid Bay","Inner Bay", "Mangrove Ecotone", "TS Marsh")))
 
+# Table 1 Confidence Intervals
+
+# Step 1: Calculate summed contributions for each iteration
+summed_contributions <- combined_posterior_tibble %>%
+  group_by(iteration, site, Season, path) %>%
+  summarise(summed_contribution = sum(`Source Contribution`, na.rm = TRUE), .groups = 'drop')
+
+# Step 2: Calculate mean and standard deviation of summed contributions
+summary_stats <- summed_contributions %>%
+  group_by(site, Season, path) %>%
+  summarise(
+    mean_summed_contribution = mean(summed_contribution),
+    sd_summed_contribution = sd(summed_contribution),
+    n = n(),  # Number of iterations
+    .groups = 'drop'
+  )
+
+# Step 3: Calculate 95% confidence intervals
+summary_stats <- summary_stats %>%
+  mutate(
+    lower_ci = mean_summed_contribution - 1.96 * (sd_summed_contribution / sqrt(n)),  # CI lower bound
+    upper_ci = mean_summed_contribution + 1.96 * (sd_summed_contribution / sqrt(n))   # CI upper bound
+  )
+
+# Step 4: Ensure CI bounds are between 0 and 1
+summary_stats <- summary_stats %>%
+  mutate(
+    lower_ci = pmax(0, lower_ci),  # Ensure lower CI does not go below 0
+    upper_ci = pmin(1, upper_ci)   # Ensure upper CI does not exceed 1
+  )
+
+# Display results
+print(summary_stats)
+
+summary_stats = summary_stats %>% 
+  mutate(low = mean_summed_contribution - (1.96*sd_summed_contribution),
+         high = mean_summed_contribution - (1.96*sd_summed_contribution))
 
 # Create the boxplot
 mixoutput_bxplt_gb_combined <- ggplot(green_contributions, aes(x = site, y = total_contribution, fill = color_fill)) +
@@ -1530,3 +1583,4 @@ TS_sources_no_outlier = ggplot(data = cont_TS, aes(x = lab, y = s_cont, fill = S
 
 TS_sources_no_outlier
 ggsave("figures/Figure_5.png", width = 4, height = 8, dpi = 600)
+# End of analysis

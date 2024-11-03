@@ -1203,7 +1203,7 @@ green_contributions <- summed_contributions %>%
 green_contributions <- green_contributions %>%
   mutate(site = factor(site, levels = c( "Lower River","Mid River", "Upper River","SRS Marsh","Outer Bay", "Mid Bay","Inner Bay", "Mangrove Ecotone", "TS Marsh")))
 
-# Table 1 Confidence Intervals
+# Table 1 Confidence Intervals ----
 
 # Step 1: Calculate summed contributions for each iteration
 summed_contributions <- combined_posterior_tibble %>%
@@ -1216,16 +1216,23 @@ summary_stats <- summed_contributions %>%
   summarise(
     mean_summed_contribution = mean(summed_contribution),
     sd_summed_contribution = sd(summed_contribution),
+    lower_ci = quantile(summed_contribution, 0.025),
+    upper_ci = quantile(summed_contribution, 0.975),
     n = n(),  # Number of iterations
     .groups = 'drop'
-  )
+  ) %>% 
+  mutate(val = paste0(format(round(mean_summed_contribution, digits = 2),nsmall = 2),
+                      ' \u00B1 ',
+                      format(round(sd_summed_contribution, digits = 2),nsmall = 2),
+                      ' (',
+                      format(round(lower_ci, digits = 2),nsmall = 2),
+                      '-',
+                      format(round(upper_ci, digits = 2),nsmall = 2),
+                      ')')) %>% 
+  select(Site = site, Season, path, val) %>% 
+  pivot_wider(names_from = path, values_from = 'val')
 
-# Step 3: Calculate 95% confidence intervals
-summary_stats <- summary_stats %>%
-  mutate(
-    lower_ci = mean_summed_contribution - 1.96 * (sd_summed_contribution / sqrt(n)),  # CI lower bound
-    upper_ci = mean_summed_contribution + 1.96 * (sd_summed_contribution / sqrt(n))   # CI upper bound
-  )
+write_excel_csv(summary_stats, 'tables/Table_1.csv')
 
 # Step 4: Ensure CI bounds are between 0 and 1
 summary_stats <- summary_stats %>%
@@ -1233,6 +1240,44 @@ summary_stats <- summary_stats %>%
     lower_ci = pmax(0, lower_ci),  # Ensure lower CI does not go below 0
     upper_ci = pmin(1, upper_ci)   # Ensure upper CI does not exceed 1
   )
+
+# Table 2 ----
+
+summary_stats_2 <- combined_posterior_tibble %>%
+  group_by(site, Season, Source) %>%
+  summarise(
+    mean_source = mean(`Source Contribution`),
+    sd_source = sd(`Source Contribution`),
+    lower_ci = quantile(`Source Contribution`, 0.025),
+    upper_ci = quantile(`Source Contribution`, 0.975),
+    n = n(),  # Number of iterations
+    .groups = 'drop'
+  ) %>% 
+  mutate(val = paste0(format(round(mean_source, digits = 2),nsmall = 2),
+                      ' \u00B1 ',
+                      format(round(sd_source, digits = 2),nsmall = 2),
+                      ' (',
+                      format(round(lower_ci, digits = 2),nsmall = 2),
+                      '-',
+                      format(round(upper_ci, digits = 2),nsmall = 2),
+                      ')')) %>% 
+  select(Site = site, Season, Source, val) %>% 
+  pivot_wider(names_from = Season, values_from = 'val')
+
+write_excel_csv(summary_stats, 'tables/Table_2.csv')
+
+# Step 4: Ensure CI bounds are between 0 and 1
+summary_stats <- summary_stats %>%
+  mutate(
+    lower_ci = pmax(0, lower_ci),  # Ensure lower CI does not go below 0
+    upper_ci = pmin(1, upper_ci)   # Ensure upper CI does not exceed 1
+  )
+
+
+
+
+
+
 
 # Display results
 print(summary_stats)

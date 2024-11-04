@@ -1203,7 +1203,7 @@ green_contributions <- summed_contributions %>%
 green_contributions <- green_contributions %>%
   mutate(site = factor(site, levels = c( "Lower River","Mid River", "Upper River","SRS Marsh","Outer Bay", "Mid Bay","Inner Bay", "Mangrove Ecotone", "TS Marsh")))
 
-# Table 1 Confidence Intervals ----
+# Table 1 Mean Channel + Confidence Intervals ----
 
 # Step 1: Calculate summed contributions for each iteration
 summed_contributions <- combined_posterior_tibble %>%
@@ -1241,7 +1241,7 @@ summary_stats <- summary_stats %>%
     upper_ci = pmin(1, upper_ci)   # Ensure upper CI does not exceed 1
   )
 
-# Table 2 ----
+# Table 2: Mean Resource + Confidence Intervals ----
 
 summary_stats_2 <- combined_posterior_tibble %>%
   group_by(site, Season, Source) %>%
@@ -1264,7 +1264,7 @@ summary_stats_2 <- combined_posterior_tibble %>%
   select(Site = site, Season, Source, val) %>% 
   pivot_wider(names_from = Season, values_from = 'val')
 
-write_excel_csv(summary_stats, 'tables/Table_2.csv')
+write_excel_csv(summary_stats_2, 'tables/Table_2.csv')
 
 # Step 4: Ensure CI bounds are between 0 and 1
 summary_stats <- summary_stats %>%
@@ -1387,7 +1387,7 @@ mean_source = combined_posterior_tibble %>%
   group_by(site, Season, Source, path, transect) %>%
   summarize(mean_contribution = mean(`Source Contribution`)) %>%
   ungroup()
-# Table 1: Mean energy channel contributions ----
+# Table 1: Mean energy channel contributions 
 # Calculate mean across all iterations for each site, season, and path
 mean_channel <- summed_contributions %>%
   group_by(site, Season, path, transect) %>%
@@ -1629,3 +1629,23 @@ TS_sources_no_outlier = ggplot(data = cont_TS, aes(x = lab, y = s_cont, fill = S
 TS_sources_no_outlier
 ggsave("figures/Figure_5.png", width = 4, height = 8, dpi = 600)
 # End of analysis
+
+
+grass_summary <- SI %>%
+  filter(common_name %in% c("Shoal Grass", "Manatee Grass", "Turtlegrass")) %>%
+  group_by(site, hydroseason) %>%
+  summarise(
+    mean_d13C = mean(d13C, na.rm = TRUE),
+    sd_d13C = sd(d13C, na.rm = TRUE),
+    mean_d15N = mean(d15N, na.rm = TRUE),
+    sd_d15N = sd(d15N, na.rm = TRUE),
+    mean_d34S = mean(d34S, na.rm = TRUE),
+    sd_d34S = sd(d34S, na.rm = TRUE),
+    replicates = n()  # Count the number of replicates for each site and season
+  )
+
+# View result
+grass_summary
+
+# View result
+grass_summary

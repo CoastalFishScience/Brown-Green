@@ -423,17 +423,17 @@ cn_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand15N)) +
   )
 
 #CS biplots fixed scales
-cs_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand15N)) +
+cs_plot_standard_axes <- ggplot(data = sources, aes(Meand13C, Meand34S)) +
   geom_point(size = 3) + 
-  geom_errorbar(aes(ymin = Meand15N - SDd15N, ymax = Meand15N + SDd15N), width = 0, linetype = "dashed") + 
+  geom_errorbar(aes(ymin = Meand34S - SDd34S, ymax = Meand34S + SDd34S), width = 0, linetype = "dashed") + 
   geom_errorbarh(aes(xmin = Meand13C - SDd13C, xmax =  Meand13C + SDd13C), height = 0, linetype = "dashed") +
   
-  geom_point(data = consumers, aes(x = md13C, y = md15N, color = hydroseason, shape = functional_grp), size = 3) +
+  geom_point(data = consumers, aes(x = md13C, y = md34S, color = hydroseason, shape = functional_grp), size = 3) +
   scale_color_manual(values = cols, drop = FALSE) +
   scale_shape_manual(values = c(15,16,17,18,19,3,8,13,4), 
                      labels = c("Demersal Fish", "Forage Fish", "Predators", "Crabs", "Benthic Inverts","Gastropods", "Insects", "Filter Feeders", "Shrimp")) +
   
-  ylab(expression(paste(delta^{15}, "N (\u2030)"))) +
+  ylab(expression(paste(delta^{34}, "S (\u2030)"))) +
   xlab(expression(paste(delta^{13}, "C (\u2030)"))) +
   labs(color = "Hydroseason", shape = "Functional Group") +
   facet_wrap(~zone, labeller = labeller(zone = site_names)) +
